@@ -146,44 +146,40 @@ export default function Home() {
             title="MemesGenerator.exe"
             onClose={() => setShowPopup(false)}
             onMinimize={() => setShowPopup(false)}
-            className="w-[600px] h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            className="w-[95%] md:w-[600px] h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           >
-            <div className="font-['MS_Sans_Serif'] p-4">
-              <div className="flex flex-col items-center gap-4">
+            <div className="font-['MS_Sans_Serif'] p-2 md:p-4">
+              <div className="flex flex-col items-center gap-2 md:gap-4">
                 <div>
-                <button
-                        className="win95-button px-4 py-2"
-                      >
-                        Buy $Bilk
-                      </button>
+                  <button className="win95-button px-3 py-1 md:px-4 md:py-2">
+                    Buy $Bilk
+                  </button>
                 </div>
-                <div className="border-2 border-gray-400 p-2">
+                <div className="border-2 border-gray-400 p-1 md:p-2">
                   <img 
                     src={previewUrl || "/bilk.png"} 
                     alt={previewUrl ? "Preview" : "Original"} 
-                    className="w-48 h-48 object-contain" 
+                    className="w-32 h-32 md:w-48 md:h-48 object-contain" 
                   />
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <p className="text-sm mb-1">Add a background:</p>
-                  <div className="flex gap-4">
+                <div className="flex flex-col items-center gap-1 md:gap-2">
+                  <p className="text-xs md:text-sm mb-1">Add a background:</p>
+                  <div className="flex flex-col md:flex-row gap-2 md:gap-4 w-full items-center">
                     <input
                       type="file"
                       accept="image/*"
                       onChange={handleImageUpload}
-                      className="win95-button p-2"
+                      className="win95-button p-1 md:p-2 w-full md:w-auto text-xs md:text-base"
                     />
                     {previewUrl && (
                       <button
-                        className="win95-button px-4 py-2"
+                        className="win95-button px-3 py-1 md:px-4 md:py-2 text-xs md:text-base"
                         onClick={handleDownload}
                       >
                         Download Meme
                       </button>
                     )}
-                    
                   </div>
-                  
                 </div>
                 
                 <canvas ref={canvasRef} style={{ display: 'none' }} />
