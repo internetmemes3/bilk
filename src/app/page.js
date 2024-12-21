@@ -59,11 +59,11 @@ export default function Home() {
   };
 
   const handleNewsClick = () => {
-    window.open('https://x.com/', '_blank');
+    window.open('https://x.com/Bilk_sol', '_blank');
   };
 
   const handleTelegramClick = () => {
-    window.open('https://t.me/', '_blank');
+    window.open('https://t.me/bilksol', '_blank');
   };
 
   const handleDexscreenerClick = () => {
