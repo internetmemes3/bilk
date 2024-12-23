@@ -161,9 +161,9 @@ export default function Home() {
             <div className="font-['MS_Sans_Serif'] p-2 md:p-4">
               <div className="flex flex-col items-center gap-2 md:gap-4">
                 <div>
-                  <button className="win95-button px-3 py-1 md:px-4 md:py-2">
+                  <a href="https://pump.fun/coin/5tHybob3FMVcPthsyTxYYKGZkhZ8CchtUPjNNGttpump" target="_blank" className="win95-button px-3 py-1 md:px-4 md:py-2">
                     Buy $Bilk
-                  </button>
+                  </a>
                 </div>
                 <div className="border-2 border-gray-400 p-1 md:p-2">
                   <img 
