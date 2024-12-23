@@ -70,6 +70,10 @@ export default function Home() {
     window.open('https://dexscreener.com/', '_blank');
   };
 
+  const handlePfClick = () => {
+    window.open('https://pump.fun/coin/5tHybob3FMVcPthsyTxYYKGZkhZ8CchtUPjNNGttpump', '_blank');
+  };
+
   const generateMeme = async (bgImage) => {
     const canvas = canvasRef.current
     const ctx = canvas.getContext('2d')
@@ -110,7 +114,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
       </Head>
       <p className="fixed bottom-14 right-8 text-sm text-gray-800">
-        Please Activate: <br/> <span className="font-bold">CA</span>
+        Please Activate: <br/> <span className="font-bold">5tHybob3FMVcPthsyTxYYKGZkhZ8CchtUPjNNGttpump</span>
       </p>
       <div className="flex-1 relative" style={{ height: 'calc(100vh - 48px)' }}>
         <div className="absolute left-0 top-0 w-[140px] p-2">
@@ -139,11 +143,17 @@ export default function Home() {
               onClick={handleDexscreenerClick}
               isActive={activeWindow === 'dexscreener'}
             />
+            <DesktopIcon 
+              icon="/icons/pf.ico"
+              label="PumpFun"
+              onClick={handlePfClick}
+              isActive={activeWindow === 'pumpfun'}
+            />
           </div>
         </div>
         {showPopup && (
           <Window
-            title="MemesGenerator.exe"
+            title="Memes.exe"
             onClose={() => setShowPopup(false)}
             onMinimize={() => setShowPopup(false)}
             className="w-[95%] md:w-[600px] h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
