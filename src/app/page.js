@@ -71,7 +71,7 @@ export default function Home() {
   };
 
   const handlePfClick = () => {
-    window.open('https://pump.fun/coin/5tHybob3FMVcPthsyTxYYKGZkhZ8CchtUPjNNGttpump', '_blank');
+    window.open('https://pump.fun/', '_blank');
   };
 
   const generateMeme = async (bgImage) => {
@@ -114,7 +114,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
       </Head>
       <p className="fixed bottom-14 right-8 text-sm text-gray-800">
-        Please Activate: <br/> <span className="font-bold">5tHybob3FMVcPthsyTxYYKGZkhZ8CchtUPjNNGttpump</span>
+        Please Activate: <br/> <span className="font-bold">CA</span>
       </p>
       <div className="flex-1 relative" style={{ height: 'calc(100vh - 48px)' }}>
         <div className="absolute left-0 top-0 w-[140px] p-2">
